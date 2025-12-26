@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kv_hqe"
+version = "1.0.0"
+description = "Hybrid KV cache quantization."
+
+requires-python = ">=3.13"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+]
+
+[tool.setuptools.packages.find]
+exclude = ["results*", "scripts*", "examples*"]
+
+[tool.wheel]
+exclude = ["results*", "scripts*", "examples*"]
